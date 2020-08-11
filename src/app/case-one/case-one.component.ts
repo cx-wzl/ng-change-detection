@@ -12,6 +12,7 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
       [data]="b"
     ></case-one-child-b>
   `,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CaseOneComponent implements OnChanges {
   @Input() data: any;
