@@ -3,6 +3,7 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 @Component({
   selector: 'case-one',
   template: `
+    <div>{{ title }}</div>
     <case-one-child-a
       *ngFor="let a of data.aList"
       [data]="a"
@@ -16,6 +17,7 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 })
 export class CaseOneComponent implements OnChanges {
   @Input() data: any;
+  @Input() title: string;
 
   ngOnChanges(changes: SimpleChanges): void {
     console.log('Change CaseOne');

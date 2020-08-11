@@ -1,5 +1,10 @@
 <div>
   <label style="margin-right: 8px;">Case One Test</label>
   <button type="button" (click)="onCaseOneClick()">Test</button>
-  <case-one [data]="caseOneData"></case-one>
+  <case-one [data]="caseOneData" [title]="caseOneTitle"></case-one>
+</div>
+<div style="margin-top: 20px;">
+  <label style="margin-right: 8px;">Case One Two</label>
+  <button type="button" (click)="onCaseTwoClick()">Test</button>
+  <case-two [data]="caseTwoData"></case-two>
 </div>
